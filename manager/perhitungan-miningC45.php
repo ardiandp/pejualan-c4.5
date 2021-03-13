@@ -27,14 +27,17 @@ function populateAtribut()
     ('', 'merek', 'Acer'),
     ('', 'merek', 'Toshiba'),
     ('', 'merek', 'Axioo'),
-    ('', 'tahun', '2003'),
-	('', 'tahun', '2004'),
-	('', 'tahun', '2005'),
-	('', 'tahun', '2007'),
-	('', 'tahun', '2008'),
-	('', 'tahun', '2009'),
-	('', 'tahun', '2010'),
+    ('', 'tahun', '2010'),
 	('', 'tahun', '2011'),
+	('', 'tahun', '2012'),
+	('', 'tahun', '2013'),
+	('', 'tahun', '2014'),
+	('', 'tahun', '2015'),
+	('', 'tahun', '2016'),
+	('', 'tahun', '2017'),
+    ('', 'tahun', '2018'),
+    ('', 'tahun', '2019'),
+    ('', 'tahun', '2020'),
     ('', 'harga', '7500000'),
 	('', 'harga', '12000000'),
 	('', 'harga', '13000000'),
@@ -46,9 +49,9 @@ function populateAtribut()
 	('', 'harga', '15000000'),
 	('', 'harga', '7000000'),
 	('', 'harga', '10000000'),
-	('', 'harga', '15500000')
-    ");
-}
+	('', 'harga', '15500000') 
+    "); 
+} 
 
 // ================ FUNGSI PERHITUNGAN C45 =================
 function perhitunganC45($atribut, $nilai_atribut) 

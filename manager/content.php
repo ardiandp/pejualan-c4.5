@@ -12,6 +12,9 @@ include "../config/session_manager.php";
 	if ($_GET['module']=='home'){
 	include "isi.php";
 }
+elseif($_GET['module']=='dataset'){
+	include "dataset.php";
+}
 elseif ($_GET['module']=='profile'){
 	include "profil.php";
 }
@@ -130,6 +133,10 @@ elseif ($_GET['module']=='simpanatribut'){
 			echo "<script>window.alert('Sukses Menyimpan data $_POST[a] !!!');
 				window.location='input-data.html'</script>";
 }
+}
+
+elseif ($_GET['module']=='inputdataset'){
+	include "input-dataset.php";
 }
 elseif ($_GET['module']=='inputdata'){
 	/* echo "<h2>Tambahkan Data Penjualan Baru Pada CV. Putra Elektronik.</h2><hr><br/><br/>

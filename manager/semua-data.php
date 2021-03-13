@@ -28,6 +28,7 @@ switch($_GET['act']){
                                   
                                 </div>
                                 <div class="table-data__tool-right">
+                                    <a href="input-dataset.html" class="btn btn-warning btn-sm">DataSet</a>
                                 	<a href="input-data.html" class="btn btn-success btn-sm">Tambah Data</a>
                                     
                                    
