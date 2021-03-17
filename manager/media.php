@@ -65,10 +65,16 @@
                                     <i class="fas fa-user"></i>
                                     <span class="bot-line"></span>Profil</a>
                             </li>
-                             <li>
-                                <a href="semua-data.html">
+                             <li class="has-sub">
+                                <a href="">
                                     <i class="fas fa-barcode"></i>
                                     <span class="bot-line"></span>Data Master</a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    <li>
+                                        <a href="semua-data.html">Semua Data</a>
+                                    </li>
+                                   
+                                </ul>
                             </li>
                            
                             <li class="has-sub">
@@ -465,3 +471,8 @@
 
 </html>
 <!-- end document-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>

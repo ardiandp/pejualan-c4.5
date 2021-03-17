@@ -16,4 +16,8 @@ RewriteRule ^simpan-edit-data\.html$ media.php?module=simpanedit&id=$1 [L]
 RewriteRule ^simpan-atribut\.html$ media.php?module=simpanatribut&id=$1 [L]
 RewriteRule ^logout$ media.php?module=logout [L]
 RewriteRule ^dataset\.html$ media.php?module=dataset&id=$1 [L]
+RewriteRule ^datatable$ media.php?module=datatable [L]
+
+RewriteRule ^input-dummy\.html$ media.php?module=input_dummy&id=$1 [L]
+RewriteRule ^panduan$ media.php?module=panduan [L]
 Options All -Indexes

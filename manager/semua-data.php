@@ -1,11 +1,20 @@
+<head>
+  <title>Pagination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+</head>
  <!-- DATA TABLE-->
             <section class="p-t-20">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="title-5 m-b-35">Data Penjualan</h3>
-                            <div class="table-data__tool">
-                                <div class="table-data__tool-left">
+                            
+                                
 <?php
 switch($_GET['act']){
     default:
@@ -26,20 +35,19 @@ switch($_GET['act']){
 } ?>                                    
                                    
                                   
-                                </div>
+                               
                                 <div class="table-data__tool-right">
-                                    <a href="input-dataset.html" class="btn btn-warning btn-sm">DataSet</a>
+                                    <a href="media.php?module=input_dummy" class="btn btn-warning btn-sm">Input Dummy</a>
                                 	<a href="input-data.html" class="btn btn-success btn-sm">Tambah Data</a>
                                     
                                    
                                     <a href="hapus-data.html" class="btn btn-danger btn-sm">Hapus Semua Data</a>
                                    
                                 </div>
-                            </div>
-                            <div class="table-responsive table-responsive-data2">
-                                <table class="table table-data2">
+                           
+                               <table class="table table-stripped table-hover datatab">
                                     <thead>
-                                        <tr>
+                                     <tr>
                                             
                                             <th>NO </th>
                                             <th>Kode</th>
@@ -78,9 +86,17 @@ switch($_GET['act']){
 									<?php  $no++;       }?>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
-                    </div>
+                           
+                      
+                    
                 </div>
             </section>
             <!-- END DATA TABLE-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.datatab').DataTable();
+  } );
+  </script>
+</html>
